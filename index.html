@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <main>
+        <section id="fundo">
+            <h1>Escolha um plano de teste</h1>
+
+            <form action="login.php" method="post">
+                <div id="plano">
+                    <input type="radio" name="plano" id="ipadrao">
+                    <label for="ipadrao" class="escolha">Padrao</label>
+                    <p>5 TB de espaço com ferramentas faceis de usar para gerenciamento de equipe e colaboração.</p>
+                </div>
+                <div id="plano">
+                    <input type="radio" name="plano" id="iavancado">
+                    <label for="iavancado" class="escolha">Avançado</label>
+                    <p>Mais espaço para a sua equipe com recursos sofisticados de administração, auditoria, segurança e integração.</p>
+                </div>
+                <div id="botao">
+                    <input type="checkbox" name="quadrado" id="iquadrado">
+                    <label for="iquadrado" class="pequeno">Eu concordo com o <a href="termos.html" >Contrato e os Termos.</a> Saiba mais sobre como usamos e protegemos seus dados em nossa <a href="politica.html"> Politica de privacidade.</a></label>
+                </div>
+                <div id="botao">
+                    <input type="checkbox" name="quadrado1" id="iquadrado1">
+                    <label for="iquadrado1" class="pequeno"> Gostaria de receber atualizações de marketing por e-mail.</label>
+                </div>
+
+                <input type="submit" value="Iniciar teste gratuito">
+                <p>Não é necessario cartao de crédito</p>
+            </form>
+
+
+        </section>
+
+    </main>
+</body>
+</html>

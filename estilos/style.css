@@ -1,0 +1,128 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
+:root{
+
+    --font-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --font-destaque: 'Tilt Neon', sans-serif;
+
+    --cor1: #DBE8E7;
+    --cor2: #110F20;
+}
+
+html, body{
+    background-color: var(--cor1);
+    width: 100vw;
+    height: 100vh;
+}
+
+main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+section#fundo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.253);
+    height: 500px;
+    width: 350px;
+    border-radius: 20px;
+    padding: 20px;
+    transform: translate(-50%, -50%);
+}
+
+section#fundo > h1{
+    font-family: var(--font-destaque);
+    text-align: center;
+    font-size: 1.3em;
+}
+
+section#fundo > form > div#plano{
+    display: block;
+    overflow: hidden;
+    width: 300px; 
+    font-size: .9em;
+    background-color: var(--cor1);
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.13);
+    padding: 5px;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+div#plano > input[type=radio], input[type=checkbox] {
+    display: inline-block;
+    margin-top: 10px;
+    width: 15px;
+    height: 15px;
+    vertical-align: sub;
+    accent-color: black;
+    cursor: pointer;
+}
+
+div#plano > label.escolha{
+    font-size: 1.2em;
+    font-family: var(--font-destaque);
+}
+
+div#plano > p{
+    margin-left: 35px;
+    text-align: justify;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: .9em;
+    width: 85%;
+}
+
+section#fundo > form> div#botao {
+    display: block;
+    overflow: hidden;
+    width: 300px; 
+    padding: 5px;
+    margin: auto;
+}
+
+div#botao > label.pequeno {
+    display: block;
+    font-size: .8em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: justify;
+    margin-left: 30px;
+    margin-top: -22px;
+}
+
+div#botao > label.pequeno > a{
+    color: black;
+}
+
+div#botao > label.pequeno > a:hover{
+    color: rgb(83, 83, 83);
+}
+
+section#fundo > form > input[type=submit]{
+    display: block;
+    width: 300px;
+    padding: 10px;
+    margin: auto;
+    margin-top: 20px;
+    background-color: var(--cor2);
+    color: white;
+    font-family: var(--font-destaque);
+    font-size: .8em;
+    border-radius: 2px;
+    border: none;
+    cursor: pointer;
+}
+
+section#fundo > form > p{
+    text-align: center;
+    font-size: .6em;
+    font-family: var(--font-padrao);
+}
+
+
+
